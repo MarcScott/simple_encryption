@@ -7,7 +7,7 @@ def generate_otp(sheets, length):
     for sheet in range(sheets):
         with open("otp" + str(sheet) + ".txt","w") as f:
             for i in range(length):
-                f.write(str(randint(0,26))+"\n")
+                f.write(str(randint(0,25))+"\n")
 
 def load_sheet(filename):
     with open(filename, "r") as f:
